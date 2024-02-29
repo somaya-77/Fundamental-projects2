@@ -59,13 +59,13 @@ const Grocery = () => {
     setLocalStorage(newItems);
   }
   return (
-    <main className='section-center'>
+    <div className='grocery'>
       <ToastContainer position="top-center" />
 
       <h2>Grocery bud</h2>
       <Form addItem={addItem} />
       <Items items={items} removeItem={removeItem} completedItem={completedItem} />
-    </main>
+    </div>
   )
 }
 

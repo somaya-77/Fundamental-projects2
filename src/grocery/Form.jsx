@@ -9,14 +9,14 @@ const Form = ({addItem}) => {
     if(!newItem) {
       toast.error("Please provid value")
       return
-    };
+    }
     addItem(newItem);
     setNewItem('');
   }
   return (
     <form onSubmit={handleSubmit} className="form-control">
       <input className="form-input" type="text" placeholder="Enter here...."  value={newItem} onChange={(e) => setNewItem(e.target.value)} />
-      <button type="submit" className="btn" >Add Item</button>
+      <button type="submit" className="btn addItem" >Add</button>
     </form>
   )
 }
